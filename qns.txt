@@ -1,0 +1,30 @@
+1. What is the Shortcut Emmet Used to Create boilerplate of HTML ?
+html:5 is the shortcut Emmet used to create boilerplate of HTML.
+2. What is DOCTYPE in Html ?
+The HTML <!DOCTYPE> declaration is not an HTML element or tag.
+ It is an instruction that tells the browser what type of document to expect.
+And The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in.
+3. What is Void Element and Example for Void Elements ?
+Void elements have a special way of representation called self-closing tags.
+ There is a special group of elements that only have start tags and does not contain any content within it that is Void elements are self-closing, so they must not have a closing tag
+Void elements can have attributes. 
+The void elements in HTML : area , base , br , col , command , embed , hr , img , input , keygen , link , meta , param , source , track , wbr.
+4. What is Different Element and Attributes ?
+ the elements tell the browser what to display, the attributes define how they will behave
+ Elements can also have attributes. 
+Attributes often provide information that is not a part of the data.A piece of markup language used to adjust the behavior or display of an HTML element.
+For example, attributes can be used to change the color, size, 
+5. What is Html Entries and Why is it need in HTML ?
+HTML entities are the reserved characters that are used in the HTML document. 
+They are not present in your standard keyboard. 
+They provide a wide range of characters, allowing you to add icons, geometric shapes, mathematical operators,etc.
+An HTML entity is used to display invisible characters and reserved characters that would otherwise be interpreted as HTML code. 
+It is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
+6. What are meta tag and why is it used ?
+meta tag is used to represent the metadata about the HTML document. It specifies page description, keywords, copyright, language, author of the documents, etc.
+The metadata does not display on the webpage, but it is used by search engines, browsers and other web services which scan the site or webpage to know about the webpage.
+With the help of meta tag, you can experiment and preview that how your webpage will render on the browser.
+meta tag is placed within the head tag, and it can be used more than one times in a document
+Meta tags are HTML elements that have a huge effect on SEO and user experience on your website.
+7. what is the best way to add images in Website ?
+CDN is the best way to add images in Website.

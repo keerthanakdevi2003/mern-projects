@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="day4.css">
+</head>
+<body>
+    <h1>ADDED IMAGE VIA LOCAL STORAGE</h1>
+    <img src="sea.jpg" alt="sea" controls>
+    <h1>ADDED IMAGE VIA CDN</h1>
+    <img src="https://ik.imagekit.io/w7xwvn6pu/sea.jpg?updatedAt=1705299869052" alt="sea">
+    
+    <br/>
+    <video width="200px" height="300px" controls="controls">
+    <source src="video.mp4" type="video/mp4"/>
+    </video>
+    <br/>
+    <h1>CREATE A BASIC FORM</h1>
+    <br/>
+    <div >
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter the username" id="username" required>
+        <br/>
+        <br/>
+        <label for="pswd">password</label>
+        <input type="password" placeholder="Enter the password"id="pswd" required>
+        <br/>
+        <br/>
+        <button type="submit">Submit</button>
+        <h1>HTML ENTRIES</h1>
+        <h3>-copyright:  &copy;</h3>
+        <h3>-trademark: &reg;</h3>
+        <h3>-ampersand: &amp;</h3>
+    </div>
+   
+</body>
+</html>
