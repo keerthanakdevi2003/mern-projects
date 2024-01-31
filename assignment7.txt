@@ -1,0 +1,187 @@
+HTML & CSS
+
+HTML
+
+WHAT IS HTML
+HTML stands for Hyper Text Markup Language
+
+WHY HTML IS USED
+HTML is the standard markup language for creating Web pages.
+
+WHAT IS EMMET ?
+EMMET is a plugin or developer tool kit that helps make your work faster and substantially enhances HTML and CSS workflows.
+
+WHAT IS SHORT CUT CREATE of Emmet Boiler plate of HTML ?
+html:5
+
+WHAT STRUCTURE OF HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+</html>
+WHAT IS HEAD TAG
+This section contains meta-information about the HTML document, such as the title of the page, links to external stylesheets or scripts, and other meta tags. It doesn't display any content on the web page itself.
+
+WHAT IS HEAD & LIST SOME TAGS COME INSIDE HEAD
+LIKE TITLE , META TAGS WITH AN EXAMPLE
+
+The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+The <title> element specifies a title for the HTML page
+Metadata is data about the HTML document. Metadata is not displayed.
+Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>document</title>
+</head>
+<body>
+
+<h1>This is a heading.</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+WHAT IS BODY TAG
+body tag contains the actual content of the web page, such as text, images, links, and other elements. This is where you put the visible part of your webpage.
+WHAT IS BODY & LIST SOME TAGS COMES INSIDE BODY
+
+
+HEADING :
+h1 element defines a main heading.
+
+<h1>This is Heading 1</h1>
+<h2>This is Heading 2</h2>
+<h3>This is Heading 3</h3>
+<h4>This is Heading 4</h4>
+<h5>This is Heading 5</h5>
+<h6>This is Heading 6</h6>
+
+PARGRAPH :
+p element defines a paragraph.
+
+<p>this is a paragraph.</p>
+EXAMPLE
+BUTTON :
+EXAMPLE
+WHAT IS DIFFERENT B/W ELEMENTS & TAGS IN HTML
+
+TAG - HTML Tags are the starting and ending parts of an HTML element. 
+They begin with < symbol and end with > symbol. 
+Whatever is written inside < and > are called tags.
+example:<b> </b>
+
+ELEMENTS - The HTML element consists of both the opening and closing tags as well as what’s inside those tags. 
+It normally consists of some structure that’s used to define the respective tags.
+example:<b>This is a content.</b>
+<b>This is a content.</b>
+
+CSS
+WHAT IS CSS
+CSS stands for Cascading Style Sheets.
+
+WHY IS CSS
+css is used to simplify the process of making web pages presentable. It allows you to apply styles on web pages.
+It enables you to do this independently of the HTML that makes up each web page.
+
+HOW TO CONNECT HTML & CSS
+
+TAG USED -<link rel="stylesheet" href="Style.css">
+Emmet Short cut -link:css
+HOW TO GET FONT & COLOR , IMAGE, CDN
+
+💡 Fonts - google fonts
+
+💡 Color - color picker
+
+💡 IMAGE - freepik
+
+💡 CDN - ImageKit.io 
+
+BASIC CSS FAMILY
+
+Text family: Text family: "Serif";
+font-family: font-family: "Roboto";
+REAMING ALL
+Color & Background family:
+color: color : red;
+REAMING ALL
+Box model:
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+width and height: width:100px; and height:100px;
+REAMING ALL
+WHEN TO USE BACKGROUND IMG VS IMG TAG
+If the image is part of the content such as a logo or diagram or person then use the <img /> tag with alt attribute. For all other use cases, use background image.
+
+LAYOUT
+An HTML layout is a blueprint used to arrange web pages in a well-defined manner. 
+It is easy to navigate, simple to understand and uses HTML tags to customize web design elements.
+
+FLEX
+flexbox was designed for layout in one dimension - either a row or a column.
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+WITH JUSTIFY CONTENT,ALIGN ITEMS,FLEX,FLEX WRAP,ORDER
+wrap
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+JUSTIFY CONTENT:
+div {
+  display: flex;
+  justify-content: center;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
+div {
+  display: flex;
+  justify-content: flex-end;
+}
+ALIGN ITEMS:
+div {
+  display: flex;
+  align-items: center;
+}
+div {
+  display: flex;
+  align-items: flex-start;
+}
+div {
+  display: flex;
+  align-items: flex-end;
+}
+order:
+<div class="flex-container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div>
+  <div style="order: 1">4</div>
+</div>
+GRID
+The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+
+WHAT TAILWIND
+tailwind stands for Tailwind CSS IntelliSense
+Tailwind creates small utilities with a defined set of options enabling easy integration of existing classes directly into the HTML code.
