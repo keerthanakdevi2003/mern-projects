@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Password</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    .error-message {
+      color: red;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+<div class="flex justify-center items-center h-screen">
+  <form id="updatePasswordForm" class="space-y-4">
+    <div>
+      <label for="newPassword" class="block">New Password:</label>
+      <input type="password" id="newPassword" name="newPassword" class="border border-gray-300 rounded px-4 py-2 w-full"  placeholder="create password">
+      <p id="newPasswordErrMsg" class="error-message"></p>
+    </div>
+
+    <div>
+      <label for="confirmPassword" class="block">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" class="border border-gray-300 rounded px-4 py-2 w-full" placeholder="confirm password">
+      <p id="confirmPasswordErrMsg" class="error-message"></p>
+    </div>
+
+    <button type="submit" id="updateBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Update Password</button>
+  </form>
+</div>
+
+<script>
+  const updatePasswordForm = document.getElementById('updatePasswordForm');
+  const newPasswordInput = document.getElementById('newPassword');
+  const confirmPasswordInput = document.getElementById('confirmPassword');
+  const newPasswordErrMsg = document.getElementById('newPasswordErrMsg');
+  const confirmPasswordErrMsg = document.getElementById('confirmPasswordErrMsg');
+
+  function validateNewPassword() {
+    if (newPasswordInput.value.trim() === '') {
+      newPasswordErrMsg.textContent = 'Please enter a new password.';
+    } else {
+      newPasswordErrMsg.textContent = '';
+    }
+  }
+
+  function validateConfirmPassword() {
+    if (confirmPasswordInput.value.trim() === '') {
+      confirmPasswordErrMsg.textContent = 'Please confirm your new password.';
+    } else {
+      confirmPasswordErrMsg.textContent = '';
+    }
+  }
+
+  newPasswordInput.addEventListener('blur', validateNewPassword);
+  confirmPasswordInput.addEventListener('blur', validateConfirmPassword);
+
+  updatePasswordForm.addEventListener('submit', function(event) {
+    validateNewPassword();
+    validateConfirmPassword();
+
+    // If any error messages are present, prevent form submission
+    if (newPasswordErrMsg.textContent !== '' || confirmPasswordErrMsg.textContent !== '') {
+      event.preventDefault();
+    }
+  });
+</script>
+
+</body>
+</html>
